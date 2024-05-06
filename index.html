@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Frontend</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Author: Garshin K. V. (layout based on an existing project),
+	Portfolio website Frontend Developer">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240506235148">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--box">
+			<div class="header__container">
+
+				<img src="img/logo.svg" alt="logo" class="header__logo">
+
+				<div class="header__menu menu">
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto-header data-goto="#home" class="menu__link">Home</a></li>
+
+							<li class="menu__item"><a href="#" data-goto-header data-goto="#about" class="menu__link">About</a></li>
+
+							<li class="menu__item"><a href="#" data-goto-header data-goto="#services" class="menu__link">Services</a></li>
+
+							<li class="menu__item"><a href="#" data-goto-header data-goto="#portfolio" class="menu__link">Portfolio</a></li>
+
+							<li class="menu__item"><a href="#" data-goto-header data-goto="#contact" class="menu__link">Contact</a></li>
+						</ul>
+					</nav>
+
+					<a href="#" class="menu__mode-moon" id="dark-mode-icon" aria-label="Website theme switcher">i</a>
+
+					<button type="button" class="menu__icon icon-menu" aria-label="Burger menu icon"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+
+			<!-- TODO Section HOME -->
+			<section class="home home--options" id="home">
+				<div class="home__crisper" data-watch-root="home" data-watch data-watch-threshold="0.85">
+					<div class="content desk-block content--options">
+						<div class="desk-block__wrap">
+							<div class="desk-block__body">
+								<h3 class="desk-block__subtitle">Hello, I am</h3>
+								<h1 class="desk-block__title-main">John Doe</h1>
+								<div class="desk-block__paragraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum porro, nihil similique sapiente veritatis iure architecto iusto officiis enim illo fugit delectus beatae consectetur error temporibus nesciunt deserunt optio.</p>
+								</div>
+								<div class="home__social">
+									<a href="#" class="desk-block__link-media">e</a>
+									<a href="#" class="desk-block__link-media">l</a>
+									<a href="#" class="desk-block__link-media">f</a>
+									<a href="#" class="desk-block__link-media">h</a>
+								</div>
+								<a href="#" class="desk-block__btn-cv">Download CV</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="decore decore--options">
+
+						<div class="decore__inner-figure">
+							<div class="decore__item profession">
+
+								<div class="profession__inner">
+									<div class="profession__aside" style="--i:0;">
+										<i class="profession__label">d</i>
+										<h3 class="profession__name">Web Developer</h3>
+									</div>
+									<div class="profession__aside" style="--i:1;">
+										<i class="profession__label">b</i>
+										<h3 class="profession__name">Photographer</h3>
+									</div>
+									<div class="profession__aside" style="--i:2;">
+										<i class="profession__label">j</i>
+										<h3 class="profession__name">Web Designer</h3>
+									</div>
+									<div class="profession__aside" style="--i:3;">
+										<i class="profession__label">m</i>
+										<h3 class="profession__name">Videographer</h3>
+									</div>
+								</div>
+
+								<div class="profession__round"></div>
+							</div>
+
+							<div class="decore__overlay"></div>
+
+							<div class="decore__poster-wrap">
+								<img src="img/poster.webp" alt="Poster" class="decore__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- TODO Section ABOUT ME -->
+			<section class="about about--setup" id="about">
+				<div class="about__container" data-watch-root="about" data-watch data-watch-threshold="0.85">
+					<div class="about__poster" data-da=".about__text-content,939.98,1">
+						<img src="img/main_poster_two.webp" alt="Poster" class="about__img" width="660" height="700" loading="lazy">
+					</div>
+
+					<div class="about__text-content text-box" data-watch data-watch-root="about">
+						<h2 class="text-box__title">About <span class="text-box__selection">Me</span></h2>
+
+						<h3 class="text-box__caption">Hi, i'm to help your next project</h3>
+
+						<div class="text-box__paragraph">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam provident perspiciatis nobis, dolorem odit porro corporis deleniti a enim vel nostrum officiis itaque quo fugiat totam optio expedita quam quos nam exercitationem doloremque dolorum. Nihil beatae ipsam cupiditate id. Debitis hic excepturi dolorem molestiae cum assumenda in molestias! Aut!
+							</p>
+						</div>
+						<a href="#" class="text-box__link-read-more">Read more</a>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- TODO Section SERVICES -->
+			<section class="services services--setup" id="services">
+				<div class="services__container text-box" data-watch-root="services" data-watch data-watch-threshold="0.85">
+
+					<h2 class="text-box__title">My <span class="text-box__selection">services</span></h2>
+
+					<div class="text-box__content content">
+
+						<div class="content__cell-desk cell-desk">
+							<i class="cell-desk__marker">d</i>
+							<h3 class="cell-desk__caption">Web development</h3>
+							<div class="cell-desk__paragraph">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt reiciendis et, doloribus reprehenderit perspiciatis neque consequatur in modi eligendi facere? Tempore consequatur inventore eius tempora sit illum quisquam optio.</p>
+							</div>
+							<a href="#" class="cell-desk__btn-link">Read more</a>
+						</div>
+
+						<div class="content__cell-desk cell-desk">
+							<i class="cell-desk__marker">a</i>
+							<h3 class="cell-desk__caption">Digital marketing</h3>
+							<div class="cell-desk__paragraph">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt reiciendis et, doloribus reprehenderit perspiciatis neque consequatur in modi eligendi facere? Tempore consequatur inventore eius tempora sit illum quisquam optio.</p>
+							</div>
+							<a href="#" class="cell-desk__btn-link">Read more</a>
+
+						</div>
+
+						<div class="content__cell-desk cell-desk">
+							<i class="cell-desk__marker">c</i>
+							<h3 class="cell-desk__caption">Graphic designer</h3>
+							<div class="cell-desk__paragraph">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt reiciendis et, doloribus reprehenderit perspiciatis neque consequatur in modi eligendi facere? Tempore consequatur inventore eius tempora sit illum quisquam optio.</p>
+							</div>
+							<a href="#" class="cell-desk__btn-link">Read more</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- TODO Section PORTFOLIO -->
+			<section class="portfolio portfolio--setup" id="portfolio" data-watch-root="portfolio" data-watch data-watch-threshold="0.85">
+				<div class="portfolio__container text-box">
+					<h2 class="text-box__title">Latest <span class="text-box__selection">projects</span></h2>
+
+					<div class="portfolio__box box">
+
+						<!-- *Card #1 -->
+						<div class="box__card-item card-item">
+							<img src="img/sladers/apple-watch.webp" alt="Poster" class="card-item__pic" width="720" height="433" loading="lazy">
+
+							<div class="card-item__text-content text-content">
+								<h3 class="text-content__caption">Web Design</h3>
+
+								<div class="text-content__partagraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+
+								<a href="#" target="_blank" class="text-content__link">g</a>
+							</div>
+						</div>
+
+						<!-- *Card #2 -->
+						<div class="box__card-item card-item">
+							<img src="img/sladers/iphone.webp" alt="Poster" class="card-item__pic" width="720" height="433" loading="lazy">
+
+							<div class="card-item__text-content text-content">
+								<h3 class="text-content__caption">Web Design</h3>
+
+								<div class="text-content__partagraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+
+								<a href="#" target="_blank" class="text-content__link">g</a>
+							</div>
+						</div>
+
+						<!-- *Card #3 -->
+						<div class="box__card-item card-item">
+							<img src="img/sladers/newhosting.webp" alt="Poster" class="card-item__pic" width="720" height="433" loading="lazy">
+
+							<div class="card-item__text-content text-content">
+								<h3 class="text-content__caption">Web Design</h3>
+
+								<div class="text-content__partagraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+
+								<a href="#" target="_blank" class="text-content__link">g</a>
+							</div>
+						</div>
+
+						<!-- *Card #4 -->
+						<div class="box__card-item card-item">
+							<img src="img/sladers/nootbook.webp" alt="Poster" class="card-item__pic" width="720" height="433" loading="lazy">
+
+							<div class="card-item__text-content text-content">
+								<h3 class="text-content__caption">Web Design</h3>
+
+								<div class="text-content__partagraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+
+								<a href="#" target="_blank" class="text-content__link">g</a>
+							</div>
+						</div>
+
+						<!-- *Card #5 -->
+						<div class="box__card-item card-item">
+							<img src="img/sladers/office.webp" alt="Poster" class="card-item__pic" width="720" height="433" loading="lazy">
+
+							<div class="card-item__text-content text-content">
+								<h3 class="text-content__caption">Web Design</h3>
+
+								<div class="text-content__partagraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+
+								<a href="#" target="_blank" class="text-content__link">g</a>
+							</div>
+						</div>
+
+						<!-- *Card #6 -->
+						<div class="box__card-item card-item">
+							<img src="img/sladers/sennheise.webp" alt="Poster" class="card-item__pic" width="720" height="433" loading="lazy">
+
+							<div class="card-item__text-content text-content">
+								<h3 class="text-content__caption">Web Design</h3>
+
+								<div class="text-content__partagraph">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+
+								<a href="#" target="_blank" class="text-content__link">g</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- TODO Section TESTIMONIAL -->
+			<section class="testimonial testimonial--setup" id="testimonial" data-watch-root="testimonial" data-watch data-watch-threshold="0.85">
+				<div class="testimonial__container slides">
+
+					<h2 class="slides__title">Valuable <span class="slides__selection">testimonial</span></h2>
+					<div class="slides__slider swiper">
+						<div class="slides__wrapper swiper-wrapper">
+							<!-- !Слайд #1 -->
+							<div class="slides__slide swiper-slide">
+								<div class="swiper-slide__inner-img">
+									<img src="img/testimonials/slider_one.webp" alt="Client" class="swiper-slide__pic" loading="lazy" width="134" height="134">
+								</div>
+
+								<div class="swiper-slide__text-cell text-cell">
+									<h3 class="text-cell__title">Jackson Levi</h3>
+
+									<div class="text-cell__paragraph">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat quibusdam? Consequuntur id eius aliquam minima commodi recusandae quia blanditiis non, nulla, voluptates et, nisi esse facere dignissimos nesciunt atque?</p>
+									</div>
+								</div>
+							</div>
+							<!-- !Слайд #2 -->
+							<div class="slides__slide swiper-slide">
+								<div class="swiper-slide__inner-img"><img src="img/testimonials/slider_two.webp" alt="Client" class="swiper-slide__pic" loading="lazy" width="134" height="134"></div>
+
+								<div class="swiper-slide__text-cell text-cell">
+									<h3 class="text-cell__title">Margaret Rodriguez</h3>
+
+									<div class="text-cell__paragraph">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat quibusdam? Consequuntur id eius aliquam minima commodi recusandae quia blanditiis non, nulla, voluptates et, nisi esse facere dignissimos nesciunt atque?</p>
+									</div>
+								</div>
+							</div>
+							<!-- !Слайд #3 -->
+							<div class="slides__slide swiper-slide">
+								<div class="swiper-slide__inner-img"><img src="img/testimonials/slider_three.webp" alt="Client" class="swiper-slide__pic" loading="lazy" width="134" height="134"></div>
+
+								<div class="swiper-slide__text-cell text-cell">
+									<h3 class="text-cell__title">Charles Hamilton</h3>
+
+									<div class="text-cell__paragraph">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat quibusdam? Consequuntur id eius aliquam minima commodi recusandae quia blanditiis non, nulla, voluptates et, nisi esse facere dignissimos nesciunt atque?</p>
+									</div>
+								</div>
+							</div>
+							<!-- !Слайд #4 -->
+							<div class="slides__slide swiper-slide">
+								<div class="swiper-slide__inner-img"><img src="img/testimonials/slider_four.webp" alt="Client" class="swiper-slide__pic" loading="lazy" width="134" height="134"></div>
+
+								<div class="swiper-slide__text-cell text-cell">
+									<h3 class="text-cell__title">Helen Hill</h3>
+
+									<div class="text-cell__paragraph">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat quibusdam? Consequuntur id eius aliquam minima commodi recusandae quia blanditiis non, nulla, voluptates et, nisi esse facere dignissimos nesciunt atque?</p>
+									</div>
+								</div>
+							</div>
+							<!-- !Слайд #5 -->
+							<div class="slides__slide swiper-slide">
+								<div class="swiper-slide__inner-img"><img src="img/testimonials/slider_five.webp" alt="Client" class="swiper-slide__pic" loading="lazy" width="134" height="134"></div>
+
+								<div class="swiper-slide__text-cell text-cell">
+									<h3 class="text-cell__title">Tim Davis</h3>
+
+									<div class="text-cell__paragraph">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat quibusdam? Consequuntur id eius aliquam minima commodi recusandae quia blanditiis non, nulla, voluptates et, nisi esse facere dignissimos nesciunt atque?</p>
+									</div>
+								</div>
+							</div>
+							<!-- !Слайд #6 -->
+							<div class="slides__slide swiper-slide">
+								<div class="swiper-slide__inner-img"><img src="img/testimonials/slider_six.webp" alt="Client" class="swiper-slide__pic" loading="lazy" width="134" height="134"></div>
+
+								<div class="swiper-slide__text-cell text-cell">
+									<h3 class="text-cell__title">Sandra Koll</h3>
+
+									<div class="text-cell__paragraph">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, fugiat quibusdam? Consequuntur id eius aliquam minima commodi recusandae quia blanditiis non, nulla, voluptates et, nisi esse facere dignissimos nesciunt atque?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-button-prev" aria-label="Button Prev"></button>
+						<button type="button" class="swiper-button-next" aria-label="Button Next"></button>
+					</div>
+				</div>
+			</section>
+
+			<!-- TODO Section CONTACT ME -->
+			<section class="contact contact--setup" id="contact" data-watch-root="contact" data-watch data-watch-threshold="0.85">
+				<div class="contact__container text-box">
+					<h2 class="text-box__title">Contact <span class="text-box__selection">me</span></h2>
+
+					<form class="contact__form content-form" action="#" method="GET" enctype="multipart/form-data">
+
+						<div class="content-form__inner">
+							<div class="content-form__item">
+								<input type="text" class="content-form__fullname-input" name="fullname" placeholder="Full Name" required>
+							</div>
+							<div class="content-form__item">
+								<input type="email" class="content-form__email-input" name="email" placeholder="Email Adrress" required>
+							</div>
+							<div class="content-form__item">
+								<input type="tel" class="content-form__tel-input" name="tel" placeholder="Mobile Number" required pattern="\+?[0-9\s\-\(\)]+">
+							</div>
+							<div class="content-form__item">
+								<input type="text" class="content-form__subemail-input" name="subemail" placeholder="Email Subject" required>
+							</div>
+							<div class="content-form__textarea-item">
+								<textarea class="content-form__textarea-input" name="textarea" placeholder="Your Message" autocomplete="off"></textarea>
+							</div>
+						</div>
+
+						<button class="text-box__link-send">Send Message</button>
+
+					</form>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__text">
+					<p>Copyright &copy; 2024 by <strong class="footer__phrase">John Doe</strong> | All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240506235148"></script>
+</body>
+
+</html>
