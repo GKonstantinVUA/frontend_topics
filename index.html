@@ -8,7 +8,7 @@
 	<meta name="description" content="Author: Garshin K. V. (layout based on an existing project),
 	Portfolio website Frontend Developer">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240506235920">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240509165024">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,12 +106,13 @@
 
 			<!-- TODO Section ABOUT ME -->
 			<section class="about about--setup" id="about">
-				<div class="about__container" data-watch-root="about" data-watch data-watch-threshold="0.85">
-					<div class="about__poster" data-da=".about__text-content,939.98,1">
+				<div class="about__container">
+
+					<div class="about__poster" data-da=".about__text-content,939.98,1" data-watch-root="about" data-watch data-watch-threshold="0.8">
 						<img src="img/main_poster_two.webp" alt="Poster" class="about__img" width="660" height="700" loading="lazy">
 					</div>
 
-					<div class="about__text-content text-box" data-watch data-watch-root="about">
+					<div class="about__text-content text-box" data-watch-root="about" data-watch data-watch-threshold="0.85">
 						<h2 class="text-box__title">About <span class="text-box__selection">Me</span></h2>
 
 						<h3 class="text-box__caption">Hi, i'm to help your next project</h3>
@@ -128,11 +129,11 @@
 
 			<!-- TODO Section SERVICES -->
 			<section class="services services--setup" id="services">
-				<div class="services__container text-box" data-watch-root="services" data-watch data-watch-threshold="0.85">
+				<div class="services__container text-box" data-watch-root="services" data-watch data-watch-threshold="0.75">
 
 					<h2 class="text-box__title">My <span class="text-box__selection">services</span></h2>
 
-					<div class="text-box__content content">
+					<div class="text-box__content content" data-watch-root="services" data-watch data-watch-threshold="0.85">
 
 						<div class="content__cell-desk cell-desk">
 							<i class="cell-desk__marker">d</i>
@@ -166,11 +167,11 @@
 			</section>
 
 			<!-- TODO Section PORTFOLIO -->
-			<section class="portfolio portfolio--setup" id="portfolio" data-watch-root="portfolio" data-watch data-watch-threshold="0.85">
-				<div class="portfolio__container text-box">
+			<section class="portfolio portfolio--setup" id="portfolio">
+				<div class="portfolio__container text-box" data-watch-root="portfolio" data-watch data-watch-threshold="0.85">
 					<h2 class="text-box__title">Latest <span class="text-box__selection">projects</span></h2>
 
-					<div class="portfolio__box box">
+					<div class="portfolio__box box" data-watch-root="portfolio" data-watch data-watch-threshold="0.35">
 
 						<!-- *Card #1 -->
 						<div class="box__card-item card-item">
@@ -267,11 +268,11 @@
 			</section>
 
 			<!-- TODO Section TESTIMONIAL -->
-			<section class="testimonial testimonial--setup" id="testimonial" data-watch-root="testimonial" data-watch data-watch-threshold="0.85">
-				<div class="testimonial__container slides">
+			<section class="testimonial testimonial--setup" id="testimonial">
+				<div class="testimonial__container slides" data-watch-root="testimonial" data-watch data-watch-threshold="0.85">
 
 					<h2 class="slides__title">Valuable <span class="slides__selection">testimonial</span></h2>
-					<div class="slides__slider swiper">
+					<div class="slides__slider swiper" data-watch-root="testimonial" data-watch data-watch-threshold="0.35">
 						<div class="slides__wrapper swiper-wrapper">
 							<!-- !Слайд #1 -->
 							<div class="slides__slide swiper-slide">
@@ -395,7 +396,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240506235920"></script>
+	<script src="js/app.min.js?_v=20240509165024"></script>
 </body>
 
 </html>

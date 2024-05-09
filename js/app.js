@@ -3821,6 +3821,7 @@
     try {
         let theme = JSON.parse(localStorage.getItem("darkTheme"));
         document.body.classList.toggle("dark-mode", theme);
+        paragraph.textContent = theme ? "k" : "i";
     } catch (error) {
         console.log(error.message);
     }

@@ -404,10 +404,16 @@ body {
   opacity: 0
 }
 ._watcher-view .desk-block__body {
-  -webkit-animation: titleUp .75s linear forwards;
-  animation: titleUp .75s linear forwards
+  -webkit-animation: titleUp .85s linear .35s forwards;
+  animation: titleUp .85s linear .35s forwards
 }
 @-webkit-keyframes titleUp {
+  0%,
+  45% {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -415,6 +421,12 @@ body {
   }
 }
 @keyframes titleUp {
+  0%,
+  45% {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -445,6 +457,12 @@ body {
   animation: contentLeft .75s linear forwards
 }
 @-webkit-keyframes contentLeft {
+  0%,
+  40% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -452,6 +470,12 @@ body {
   }
 }
 @keyframes contentLeft {
+  0%,
+  40% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -609,27 +633,34 @@ body {
 }
 .about__poster {
   display: block;
-  overflow: hidden;
-  -webkit-transform: translateX(-200px);
-  transform: translateX(-200px);
-  opacity: 0
-}
-._watcher-view .about__poster {
-  -webkit-animation: contentLeft 1s linear forwards;
-  animation: contentLeft 1s linear forwards
-}
-@keyframes contentLeft {
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1
-  }
+  overflow: hidden
 }
 .about__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0
+}
+._watcher-view .about__img {
+  -webkit-animation: contentLeft 1s linear forwards;
+  animation: contentLeft 1s linear forwards
+}
+@keyframes contentLeft {
+  0%,
+  40% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+  }
+  100%,
+  85% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
 }
 .about__text-content:not(:last-child) {
   margin-bottom: 1.25em
@@ -648,10 +679,16 @@ body {
   margin-bottom: .8333333333em
 }
 ._watcher-view .text-box__title {
-  -webkit-animation: titleUp .75s linear forwards;
-  animation: titleUp .75s linear forwards
+  -webkit-animation: titleUp .85s linear .35s forwards;
+  animation: titleUp .85s linear .35s forwards
 }
 @keyframes titleUp {
+  0%,
+  45% {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -665,18 +702,24 @@ body {
   font-size: clamp(1.5rem,1.348rem + .76vw,2rem);
   line-height: 1.1;
   font-weight: 600;
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(60px);
+  transform: translateY(60px);
   opacity: 0
 }
 .text-box__caption:not(:last-child) {
   margin-bottom: .4375em
 }
 ._watcher-view .text-box__caption {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
+  -webkit-animation: contentDown .75s linear .75s forwards;
+  animation: contentDown .75s linear .75s forwards
 }
 @-webkit-keyframes contentDown {
+  0%,
+  50% {
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -684,6 +727,12 @@ body {
   }
 }
 @keyframes contentDown {
+  0%,
+  50% {
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -691,15 +740,21 @@ body {
   }
 }
 .text-box__paragraph {
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
   opacity: 0
 }
 ._watcher-view .text-box__paragraph {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
+  -webkit-animation: contentDown .75s linear .75s forwards;
+  animation: contentDown .75s linear .75s forwards
 }
 @keyframes contentDown {
+  0%,
+  50% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -707,15 +762,21 @@ body {
   }
 }
 .text-box__link-read-more {
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
   opacity: 0
 }
 ._watcher-view .text-box__link-read-more {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
+  -webkit-animation: contentDown .75s linear .75s forwards;
+  animation: contentDown .75s linear .75s forwards
 }
 @keyframes contentDown {
+  0%,
+  50% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -736,10 +797,16 @@ body {
   opacity: 0
 }
 ._watcher-view .text-box__content {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
+  -webkit-animation: contentDown .75s linear .75s forwards;
+  animation: contentDown .75s linear .75s forwards
 }
 @keyframes contentDown {
+  0%,
+  50% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -780,7 +847,40 @@ body {
 .portfolio__box {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 1.25em
+  gap: 1.25em;
+  -webkit-transform: translateY(90px);
+  transform: translateY(90px);
+  opacity: 0
+}
+._watcher-view .portfolio__box {
+  -webkit-animation: contentDownCards 1s linear .3s forwards;
+  animation: contentDownCards 1s linear .3s forwards
+}
+@-webkit-keyframes contentDownCards {
+  0%,
+  50% {
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+@keyframes contentDownCards {
+  0%,
+  50% {
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
 }
 .portfolio .text-box__title {
   text-align: center
@@ -790,21 +890,7 @@ body {
   display: flex;
   border-radius: clamp(1.375rem,1.185rem + .95vw,2rem);
   overflow: hidden;
-  box-shadow: 0 0 1rem var(--shadow-color);
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
-  opacity: 0
-}
-._watcher-view .box__card-item {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
-}
-@keyframes contentDown {
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1
-  }
+  box-shadow: 0 0 1rem var(--shadow-color)
 }
 .card-item__pic {
   position: absolute;
@@ -876,18 +962,24 @@ body {
   font-weight: 700;
   text-transform: capitalize;
   text-align: center;
-  -webkit-transform: translateY(-90px);
-  transform: translateY(-90px);
+  -webkit-transform: translateY(-80px);
+  transform: translateY(-80px);
   opacity: 0
 }
 .slides__title:not(:last-child) {
   margin-bottom: .8333333333em
 }
 ._watcher-view .slides__title {
-  -webkit-animation: titleUp .75s linear forwards;
-  animation: titleUp .75s linear forwards
+  -webkit-animation: titleUp .85s linear .35s forwards;
+  animation: titleUp .85s linear .35s forwards
 }
 @keyframes titleUp {
+  0%,
+  40% {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -898,15 +990,34 @@ body {
   color: var(--main-color)
 }
 .slides__slider {
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px);
+  -webkit-transform: translateY(90px);
+  transform: translateY(90px);
   opacity: 0
 }
 ._watcher-view .slides__slider {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
+  -webkit-animation: contentDownCardsTestimonial 1s linear .3s forwards;
+  animation: contentDownCardsTestimonial 1s linear .3s forwards
 }
-@keyframes contentDown {
+@-webkit-keyframes contentDownCardsTestimonial {
+  0%,
+  50% {
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+@keyframes contentDownCardsTestimonial {
+  0%,
+  50% {
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -969,15 +1080,34 @@ body {
 .contact__form {
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  -webkit-transform: translateY(100px);
-  transform: translateY(100px)
+  -webkit-transform: translateY(90px);
+  transform: translateY(90px);
+  opacity: 0
 }
 ._watcher-view .contact__form {
-  -webkit-animation: contentDown .75s linear forwards;
-  animation: contentDown .75s linear forwards
+  -webkit-animation: contentDownForm 1s linear .3s forwards;
+  animation: contentDownForm 1s linear .3s forwards
 }
-@keyframes contentDown {
+@-webkit-keyframes contentDownForm {
+  0%,
+  50% {
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+@keyframes contentDownForm {
+  0%,
+  50% {
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+    opacity: 0
+  }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
