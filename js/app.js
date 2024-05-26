@@ -3825,7 +3825,7 @@
     } catch (error) {
         console.log(error.message);
     }
-    window["FLS"] = true;
+    window["FLS"] = false;
     menuInit();
     pageNavigation();
 })();
